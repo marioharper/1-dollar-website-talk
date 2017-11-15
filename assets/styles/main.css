@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 60px auto;
+  column-fill: initial;
+  column-gap: 30px;  
+  transition: all .5s ease-in-out;  
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    column-count: 2;      
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    column-count: 3;      
+  }
+}
+
+.image {
+  margin-bottom: 30px;
+}
+
+.image-preview {
+  max-width: 100%;
+  vertical-align: bottom;  
+  height: auto;
+  transition: all .5s ease-in-out;  
+}
