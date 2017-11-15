@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+</head>
+
+<body>
+  <h1>Photography</h1>
+
+  <p>Images from National Geographic's Photograph of the Day</p>
+
+  <div class="gallery">
+
+    <!--uses nunjucks templating https://mozilla.github.io/nunjucks/ -->
+    {% for image in images %}
+    <div class="image">
+      <a href="{{ image.url }}">
+        <img class="image-preview" src="{{ image.url }}" alt="{{ image.alt }}" />
+      </a>
+    </div>
+    {% endfor %}
+
+  </div>
+</body>
+
+</html>
