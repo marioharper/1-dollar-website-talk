@@ -9,6 +9,7 @@
   "author": "Mario Harper",
   "license": "ISC",
   "devDependencies": {
+    "contentful": "^5.0.3",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-nunjucks-render": "^2.2.1"

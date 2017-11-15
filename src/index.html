@@ -17,8 +17,8 @@
     <!--uses nunjucks templating https://mozilla.github.io/nunjucks/ -->
     {% for image in images %}
     <div class="image">
-      <a href="{{ image.url }}">
-        <img class="image-preview" src="{{ image.url }}" alt="{{ image.alt }}" />
+      <a href="{{ 'https:' + image.fields.photo.fields.file.url }}">
+        <img class="image-preview" src="{{ 'https:' + image.fields.photo.fields.file.url + '?q=40' }}" alt="{{ image.fields.title }}" />
       </a>
     </div>
     {% endfor %}
